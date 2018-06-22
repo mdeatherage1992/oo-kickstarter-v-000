@@ -5,9 +5,9 @@ class Backer
     @backed_projects = []
   end
 
-  def backed_projects
-    @backed_projects.dup.freeze
-  end
+  # def backed_projects
+  #   @backed_projects.dup.freeze
+  # end
 
   def back_project(project)
     @backed_projects << project
