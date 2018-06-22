@@ -5,9 +5,9 @@ class Project
     @title = title
   end
 
-  def back_project(project)
-    project = Project.new
-    @@backed_projects << project
+  def add_backer(backer)
+    backer = Backer.new
+    @@backers << backer
   end
 
 
