@@ -10,7 +10,6 @@ class Backer
     @backed_projects.dup.freeze
   end
   def back_project(project)
-    new_project = Project.new(project)
     @backed_projects << new_project
   end
 
