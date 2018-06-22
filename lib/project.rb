@@ -14,10 +14,10 @@ class Project
     @backers << backer
   end
 
-  def backers=(backer)
-    @backer = backer
-    backer.add_project(self) unless backer.project == self
-  end
+  # def backers=(backer)
+  #   @backer = backer
+  #   backer.add_project(self) unless backer.project == self
+  # end
 
 
 end
