@@ -1,8 +1,13 @@
 class Backer
   attr_accessor :name
-  @@backers = []
+
   def initialize(name)
     @name = name
+    @projects = []
+  end
+
+  def projects
+    @projects.dup.freeze
   end
 
   def back_project(project)
