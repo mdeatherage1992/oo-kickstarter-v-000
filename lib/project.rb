@@ -6,9 +6,9 @@ class Project
     @backers = []
   end
 
-  def backers
-    @backers.dup.freeze
-  end
+  # def backers
+  #   @backers.dup.freeze
+  # end
 
   def add_backer(backer)
     @backers << backer
