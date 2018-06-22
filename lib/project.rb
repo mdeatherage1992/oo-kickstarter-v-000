@@ -14,11 +14,6 @@ class Project
     @backers << backer
   end
 
-  def backer=(backer)
-    @backer = backer
-    backer.back_project(self) unless backer.project.indclude?(self)
-  end
-
 
 
 end
