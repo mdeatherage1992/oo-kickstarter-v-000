@@ -3,16 +3,16 @@ class Backer
 
   def initialize(name)
     @name = name
-    @projects = []
+    @backed_projects = []
   end
 
-  def projects
-    @projects.dup.freeze
+  def backed_projects
+    @backed_projects.dup.freeze
   end
 
   def back_project(project)
     project = Project.new
-    @projects << project
+    @backed_projects << project
   end
 
 end
