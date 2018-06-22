@@ -16,7 +16,7 @@ class Project
 
   def backer=(backer)
     @backer = backer
-    backer.add_project(self)
+    backer.add_project(self) unless backer.project == self
   end
 
 
