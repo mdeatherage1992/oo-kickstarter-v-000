@@ -14,6 +14,10 @@ class Project
     @backers << backer
   end
 
+  def backer=(backer)
+    @backer = backer
+    backer.add_project(self)
+  end
 
 
 end
